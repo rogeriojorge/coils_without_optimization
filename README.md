@@ -1,18 +1,3 @@
-Love it. Here’s a clean CLI that lets you override the important parameters from the command line (especially the `wout`), while still keeping the driver runnable as a regular script with inline tweaks.
-
-Below are the **full contents of every file** you need (only the *new/changed* ones compared to the previous layout). You can run either:
-
-* as a module: `python -m boozcoils ...`
-* or the driver directly: `python scripts/coils_from_BOOZ_XFORM.py ...`
-* or with no flags at all (it will use the defaults in `Config`)
-
----
-
-# 🔧 New/updated files
-
-## `README.md` (updated)
-
-````markdown
 # Boozer → Coils: Optimization + Fieldlines + Publication-Ready Plots
 
 This repository computes Boozer-space surfaces from a VMEC `wout_*.nc`, fits coil curves,
