@@ -1,0 +1,8 @@
+numpy
+jax
+plotly
+matplotlib
+simsopt
+booz_xform
+essos
+kaleido

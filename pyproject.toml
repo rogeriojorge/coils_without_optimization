@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "boozcoils"
+version = "0.1.0"
+description = "Boozer→Coils: optimization, tracing, and fast 3D plotting"
+authors = [{ name = "Rogerio Jorge & Cristian Vega" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["boozcoils*"]
