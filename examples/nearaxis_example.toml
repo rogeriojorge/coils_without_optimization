@@ -1,0 +1,16 @@
+# Example configuration for the near–axis workflow
+example = "nearaxis"
+output_name = "demo_nearaxis"
+rc    = [1.0, 0.045]
+zs    = [0.0, -0.045]
+etabar= -0.9
+nfp   = 3
+ntheta= 41
+ncoils= 4
+r_coils = 0.4
+r_surface = 0.2
+plot_fieldlines = true
+plot_coils_on_2d = true
+
+# To display raw near–axis coil loops and their field lines, set:
+# plot_coils_without_fourier_fit = true

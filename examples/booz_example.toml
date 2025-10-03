@@ -1,0 +1,15 @@
+# Example configuration for the Boozer→Coils workflow
+example = "booz"
+output_name = "demo_booz"
+file_to_use = "LandremanPaul2021_QH_reactorScale_lowres"
+ncoils = 4
+ntheta  = 41
+plot_fieldlines = true
+use_circular_coils = false
+tube_radius = 0.12
+tube_theta  = 12
+decimate    = 2
+max_fun_evals = 150
+radial_extension = 0.002
+
+# Add any other parameters from BoozConfig here to override defaults

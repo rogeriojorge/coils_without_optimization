@@ -6,3 +6,4 @@ simsopt
 booz_xform
 essos
 kaleido
+tomli

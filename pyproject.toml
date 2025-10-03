@@ -3,15 +3,30 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "boozcoils"
+# NOTE: this package bundles two educational coil design examples: one
+# starting from a VMEC input (Boozer→Coils) and one based on near‑axis
+# expansions.  Both examples share a common set of utilities for coil
+# fitting, optimization and plotting.  The package exposes a simple
+# command–line interface which reads its configuration from a TOML file
+# and writes all outputs into a user‑selectable directory.
+name = "coils_without_optimization"
 version = "0.1.0"
-description = "Boozer→Coils: optimization, tracing, and fast 3D plotting"
-authors = [{ name = "Rogerio Jorge & Cristian Vega" }]
+description = "Coil design examples (Boozer→Coils and Near‑Axis) with optimisation, field line tracing and plotting"
+authors = [ { name = "Plasma Team" } ]
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "numpy",
+    "jax",
+    "plotly",
+    "matplotlib",
+    "simsopt",
+    "booz_xform",
+    "essos",
+    "kaleido",
+    "tomli",  # for reading TOML on Python<3.11; Python≥3.11 uses tomllib
 ]
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["boozcoils*"]
+include = ["coils_without_optimization*"]
